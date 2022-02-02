@@ -1,15 +1,12 @@
 import java.util.Scanner;
-public class Q3 {
-    public static void main(String[] args)
-    {
-        boolean[][] array={{true,false,true},{false,true,false}};
-        for(int row_index = 0;row_index <array.length ;row_index++){
-            for(int column_index =  0;column_index < array[0].length;column_index++)
+public class Q4 {
+    public static void main(String[] args) {
+        int[][] array={{10,20,30},{40,50,60}};
+        for(int i=0;i<array[0].length;i++)
+        {
+            for(int j=0;j<array.length;j++)
             {
-                boolean arr=array[row_index][column_index];
-                String convert=String.valueOf(arr);
-                char result=convert.charAt(0);
-                System.out.print(result+" ");
+                System.out.print(array[j][i]+" ");
             }
             System.out.println(" ");
         }
