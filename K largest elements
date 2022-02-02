@@ -1,0 +1,15 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class Q5 {
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        int[] array={1,4,17,7,25,3,100};
+        Arrays.sort(array);
+        System.out.print("Enter k largest elements you want: ");
+        int k=obj.nextInt();
+        System.out.println(array.length);
+        for(int i=array.length-1;i>=array.length-k;i--){
+            System.out.print(array[i]+" ");
+        }
+    }
+}
