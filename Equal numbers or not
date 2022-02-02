@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Q1 {
+    public static void  main(String[] args){
+        Scanner obj=new Scanner(System.in);
+        System.out.print("Input first number: ");
+        int first_number=obj.nextInt();
+        System.out.print("Input second number: ");
+        int second_number=obj.nextInt();
+        System.out.print("Input third number: ");
+        int third_number=obj.nextInt();
+        System.out.print("Input fourth number: ");
+        int fourth_number=obj.nextInt();
+        if(first_number==second_number && second_number==third_number && third_number==fourth_number){
+            System.out.print("Numbers are equal!");
+        }
+        else{
+            System.out.print("Numbers are not equal!");
+        }
+    }
+}
