@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Q2 {
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.print("Enter first number: ");
+        double first_number=obj.nextDouble();
+        System.out.print("Enter second number: ");
+        double second_number=obj.nextDouble();
+        if((first_number>0 &&  first_number<1) && (second_number>0 && second_number<1)){
+            System.out.print("true");
+        }
+        else{
+            System.out.print("false");
+        }
+    }
+}
